@@ -1,3 +1,13 @@
 This project analyses worldwide smoking data using an interactive webpage to compare the percentages of smokers in the population and the gender split using an interactive choropleth map. This map has two layers which can be selected to show the changes in the smoking statistics from the year 2000 (layer 1) and 2012 (layer 2).  The second page of the website explores if there is a relationship between the percentage of smokers in a population and the socioeconomic factors GDP, health expenditure and unemployment. The user selects a socioeconomic factor from the dropdown menu and a scatterplot appears containing 2 sets of markers, one for the socioeconomic factor and another for the percentage of smokers in the population. 
 
 The data was merged and cleaned after being downloaded in .csv and json files into the resources folder in the repository. The data was cleaned using python (cleaning_code_health_expenditure.py ect ) and then merged in Code_merginf and Merging with co-ordinate files. In order to create the cloropleth map worth border co-ordinates were downloaded from https://gist.github.com/markmarkoh/2969317, this was converted to the worldborders.json file and then combined with the smoking dataframe. All merged dataframes were coveretd and exported in CSV format into the resources folder. A table schema and database was created using python in the Making_db file and this was used to create an API using flask and visual studio code in the file Creating_an_API_G3. 3 API routes were created, one that had the smoking and co-ordinate data for 2000, another for 2012 which were to be used to create the chloropleth map, and another with the combined smoking and socioeconomic data for the scatter and bar graphs. A chloropleth map was created for the 2000 smoking data however the webpage would not run, there were no errors in console. These files are Index_Project 3.html and heatmap.js. Then a scatterplot and bargraph with a dropdown menu showing smoking percentages vs socioeconomic factors was created, these pages do run, the files are Bar_graph_HTML and Graphs_HTML3 and the js files are graphs and bar graph. There was another HTML created called Multiple_bar graph that shows the top 10 and bottom 10 of each socioeconomic factor in a bar graph with the js file multiple bar graphs but this code does not run. 
+
+
+refrences
+worldbank
+https://www.kaggle.com/datasets/mexwell/us-smoking-trend
+https://leafletjs.com/examples/quick-start/
+https://oramind.com/country-border-highlighting-with-leaflet-js/
+https://colorbrewer2.org/#type=sequential&scheme=YlOrRd&n=3
+https://www.anychart.com/blog/2020/05/06/javascript-choropleth-map-tutorial/
+https://r-graph-gallery.com/183-choropleth-map-with-leaflet.html
